@@ -8,7 +8,7 @@
   }
 
   &_slide {
-    padding: min(6vw, 2.5rem);
+    padding: min(6.5vw, 2.5rem);
   }
 
   &.rating-finish {
@@ -24,10 +24,27 @@
 
     background-color: $Dark-Blue-400;
   }
+
+  &_btn {
+    display: block;
+    width: 100%;
+    padding: 0.95rem 1rem 0.75rem;
+    border: none;
+    border-radius: 25px;
+
+    font-size: var(--fs-400);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $White;
+
+    background-color: $Orange;
+  }
 }
 
 .grades {
   --justify: space-between;
+  margin-block: 1.7rem;
+  font-size: var(--fs-400);
 
   > * {
     width: 45px;

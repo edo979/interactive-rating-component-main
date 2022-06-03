@@ -2,7 +2,7 @@
 
 :root {
   --fs-600: 1.55rem;
-  --fs-400: 1rem;
+  --fs-400: 0.925rem;
 }
 
 html {
@@ -14,6 +14,7 @@ h1,
 .h1 {
   font-size: var(--fs-600);
   color: $White;
+  line-height: 1;
 }
 
 p {
