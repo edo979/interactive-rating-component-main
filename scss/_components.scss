@@ -1,0 +1,17 @@
+.slider {
+  display: flex;
+
+  transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  > * {
+    flex: 1 0 100%;
+  }
+
+  &_slide {
+    padding: min(6vw, 2.5rem);
+  }
+
+  &.rating-finish {
+    transform: translateX(-100%);
+  }
+}
