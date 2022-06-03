@@ -15,3 +15,29 @@
     transform: translateX(-100%);
   }
 }
+
+.rating {
+  &_img {
+    display: inline-block;
+    padding: 1rem;
+    border-radius: 50%;
+
+    background-color: $Dark-Blue-400;
+  }
+}
+
+.grades {
+  --justify: space-between;
+
+  > * {
+    width: 45px;
+    height: 45px;
+    padding-top: 5px;
+    border-radius: 50%;
+    border: none;
+
+    color: $Medium-Grey;
+
+    background-color: $Dark-Blue-400;
+  }
+}
