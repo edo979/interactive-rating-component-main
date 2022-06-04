@@ -38,6 +38,13 @@
     color: $White;
 
     background-color: $Orange;
+
+    &:hover,
+    &:focus {
+      color: $Orange;
+      font-weight: 700;
+      background-color: $White;
+    }
   }
 }
 
@@ -57,6 +64,19 @@
     color: $Medium-Grey;
 
     background-color: $Dark-Blue-400;
+
+    cursor: pointer;
+
+    &:focus,
+    &:hover {
+      color: $White;
+      background-color: $Light-Grey;
+    }
+  }
+
+  .active {
+    color: $White;
+    background-color: $Orange;
   }
 }
 

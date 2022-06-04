@@ -40,12 +40,12 @@
               feedback is appreciated to help us improve our offering!
             </p>
 
-            <div class="grades flex">
-              <button class="grade">1</button>
-              <button class="grade">2</button>
-              <button class="grade">3</button>
-              <button class="grade">4</button>
-              <button class="grade">5</button>
+            <div class="grades flex" id="grades">
+              <button class="grade" data-grade="1">1</button>
+              <button class="grade" data-grade="2">2</button>
+              <button class="grade" data-grade="3">3</button>
+              <button class="grade" data-grade="4">4</button>
+              <button class="grade" data-grade="5">5</button>
             </div>
 
             <button class="rating_btn" id="submit">Submit</button>
@@ -61,7 +61,9 @@
               alt="mobile phone and id ilustration"
             />
 
-            <div class="feedback-msg_rating">You selected out of 5</div>
+            <div class="feedback-msg_rating" id="feedback-msg">
+              You selected out of 5
+            </div>
 
             <h2 class="h1">Thank you!</h2>
             <p>
@@ -84,11 +86,29 @@
 
     <script>
       const btnEl = document.getElementById('submit'),
-        sliderEl = document.getElementById('slider')
+        sliderEl = document.getElementById('slider'),
+        gradesEl = document.getElementById('grades'),
+        feedbackEl = document.getElementById('feedback-msg')
 
-      btnEl.addEventListener('click', (e) =>
+      let grade = 0
+
+      btnEl.addEventListener('click', (e) => {
+        // show thanks state
         sliderEl.classList.add('rating-finish')
-      )
+
+        feedbackEl.innerText = `You selected ${grade} out of 5`
+      })
+
+      gradesEl.addEventListener('click', (e) => {
+        Array.from(gradesEl.children).forEach((gradeEl) =>
+          gradeEl.classList.remove('active')
+        )
+
+        const gradeEl = e.target
+
+        gradeEl.classList.add('active')
+        grade = gradeEl.dataset.grade
+      })
     </script>
   </body>
 </html>
