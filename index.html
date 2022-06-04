@@ -26,7 +26,7 @@
   <body>
     <div class="main-container">
       <div class="container">
-        <div class="slider flex">
+        <div class="slider flex" id="slider">
           <!-- Rating state start -->
 
           <div class="rating slider_slide flow">
@@ -48,7 +48,7 @@
               <button class="grade">5</button>
             </div>
 
-            <button class="rating_btn">Submit</button>
+            <button class="rating_btn" id="submit">Submit</button>
           </div>
 
           <!-- Rating state end -->
@@ -83,5 +83,14 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div>
+
+    <script>
+      const btnEl = document.getElementById('submit'),
+        sliderEl = document.getElementById('slider')
+
+      btnEl.addEventListener('click', (e) =>
+        sliderEl.classList.add('rating-finish')
+      )
+    </script>
   </body>
 </html>
