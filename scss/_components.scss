@@ -59,3 +59,22 @@
     background-color: $Dark-Blue-400;
   }
 }
+
+.feedback-msg {
+  text-align: center;
+
+  img {
+    margin-inline: auto;
+    width: 150px;
+  }
+
+  &_rating {
+    display: inline-block;
+    padding: 0.35rem 1rem 0.2rem;
+    margin: 1.75rem 0 1rem;
+    border-radius: 25px;
+    color: $Orange;
+
+    background-color: $Dark-Blue-400;
+  }
+}
