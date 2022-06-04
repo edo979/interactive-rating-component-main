@@ -1,0 +1,28 @@
+@media (min-width: 450px) {
+  :root {
+    --fs-600: 1.8rem;
+    --fs-500: 1.15rem;
+    --fs-400: 1rem;
+
+    --b-radius: 30px;
+  }
+
+  .slider {
+    h1,
+    h2 {
+      margin-top: 1.75rem;
+    }
+  }
+
+  .grades {
+    > * {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .feedback-msg img {
+    width: 170px;
+    margin-bottom: 1rem;
+  }
+}

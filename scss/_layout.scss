@@ -8,12 +8,12 @@
 }
 
 .container {
-  width: min(86vw, 400px);
+  width: min(86vw, 425px);
 
   background-color: gray;
   overflow: hidden;
 
-  border-radius: $border-radius;
+  border-radius: var(--b-radius);
   background-color: $Dark-Blue-500;
 }
 
