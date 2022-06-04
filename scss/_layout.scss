@@ -8,12 +8,13 @@
 }
 
 .container {
+  position: relative;
   width: min(86vw, 425px);
 
   background-color: gray;
   overflow: hidden;
 
-  border-radius: var(--b-radius);
+  border-radius: var(--b-radius, 15px);
   background-color: $Dark-Blue-500;
 }
 
